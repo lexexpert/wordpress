@@ -29,7 +29,7 @@ function riv_post_views($content){
 	global $post;
 	$views = $post->riv_views;
 	if(is_single()) $views++;
-	return $content."<b>Number of views: </b>".$views;
+	return $content."<br><b>Number of views: </b>".$views;
 }
 
 function riv_add_view(){
